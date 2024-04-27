@@ -1,0 +1,25 @@
+show tables;
+select * from company;
+select * from student;
+select concat(department,name) from company where id=2;
+select lower(department) from company;
+select substr(name,5,2)from company;
+select replace(department,'it','information technology') from company;
+select length (rtrim(department)) from company;
+select length ("      ntr  ") from company;
+select floor(35/2);
+select abs(-35);
+select ceil(12.87);
+select round(35.3);
+select mod(salary,2)from company;
+insert into company values(12,"lic","raaa",4500.87,"vizag");
+insert into company values(14,"llc","baa",-4587.87,"besi");
+select abs(salary) from company;
+select exp(10);
+select curdate();
+select now();
+select last_day("2024-09-15");
+select datediff("2024-06-12","2024-06-21");
+select date_format('2024-09-22','%W-%D-%M-%Y');
+select date_format(now(),'%W,%D-%M-%Y, %r');
+select date_format(now(),
